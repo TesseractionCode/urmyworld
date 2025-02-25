@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
+import 'features/matcher/presentation/pages/questionnaire.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const URMyWorld());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class URMyWorld extends StatelessWidget {
+  const URMyWorld({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      home: Material(child: Questionnaire())
     );
   }
 }
