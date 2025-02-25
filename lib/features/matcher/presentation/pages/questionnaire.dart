@@ -1,6 +1,5 @@
-import 'package:flutter_svg/flutter_svg.dart';
-
 import 'package:flutter/material.dart';
+import '../widgets/planet_select_visual.dart';
 
 class Questionnaire extends StatelessWidget {
   const Questionnaire({super.key});
@@ -8,25 +7,15 @@ class Questionnaire extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      
       children: [
         SizedBox(
-          width: 75,
-          child: Container(
-            color: const Color.fromARGB(255, 16, 7, 7),
-            child: Center(child: Text('data')),
-          )
+          width: 70,
+          child: PlanetSelectVisual(),
         ),
         Expanded(
-          flex: 2,
-          child: Container(
-            color: Colors.white,
-            child: Center(
-              child: SvgPicture.asset('assets/images/venus.svg')
-            )
-          )
-        ),
-      ],
+          child: Container(),
+        )
+      ]
     );
   }
 
